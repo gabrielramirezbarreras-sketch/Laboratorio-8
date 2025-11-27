@@ -1,0 +1,27 @@
+Practica 1: Instalacion y configuracion de Docker.
+sudo apt update
+sudo apt install docker.io -y
+sudo systemctl status docker
+sudo systemctl start docker
+sudo systemctl enable docker
+docker --version
+docker pull nginx
+sudo mkdir -p /home/website
+sudo chmod 777 /home/website
+docker run -d --name miweb -p 8888:80 -v /home/website:/usr/share/nginx/html nginx
+docker ps
+nano /home/website/index.html
+script:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página</title>
+</head>
+<body>
+    <h1>Nombre: Gabriel Ramirez</h1>
+    <h2>Matrícula: 2025-1352</h2>
+    <h3>Asignatura: SO3</h3>
+</body>
+</html>
+http://172.17.0.1:8888
+
