@@ -51,8 +51,6 @@ y le damos en stop,  verificamos que si se haya detenido en
 http://localhost:8888
 
 PRACTICA 3: CONTENEDOR DE WORDPRESS
-
-
 Instalar docker y docker compose
 sudo apt update && sudo apt install docker.io docker-compose -y
 
